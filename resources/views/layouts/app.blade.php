@@ -9,7 +9,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
-<body>
+<header>
+</header>
 <div class="container mt-4">
     <h1>@yield('header')</h1>
     <div>
