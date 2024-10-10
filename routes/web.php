@@ -3,11 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $params = 'yuuuuu';
-    return view('welcome', ['params' => $params]);
+    return view('welcome');
 });
 
-Route::get('about', function () {
-    $tags = ['обучение', 'программирование', 'php', 'oop'];
-    return view('about', ['tags' => $tags]);
-});
+Route::get('about', [App\Http\Controllers\PageController::class, 'about']);
