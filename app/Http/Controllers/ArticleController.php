@@ -29,11 +29,6 @@ class ArticleController extends Controller
 
     public function store(ArticleRequest $request)
     {
-//        $data = $request->validate([
-//            'name' => 'required|unique:articles',
-//            'body' => 'required|min:10',
-//        ]);
-
         $data = $request->validated();
 
         $article = new Article();
